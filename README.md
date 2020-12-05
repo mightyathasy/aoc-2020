@@ -1,6 +1,6 @@
 # Advent of Code 2020 - athasy
 
-This project contains solution for Advent of Code 2020 puzzles.
+This project contains solution for Advent of Code 2020 puzzles.\
 [https://adventofcode.com/](https://adventofcode.com/)
 
 
