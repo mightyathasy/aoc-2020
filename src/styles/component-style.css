@@ -1,0 +1,21 @@
+.outer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.form-column {
+    width: 30%;
+    float: left;
+}
+
+.result-column {
+    width: 20%;
+    float: left;
+}
+
+.puzzle-select-label {
+    width: 100%;
+    
+}

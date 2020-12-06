@@ -5,3 +5,13 @@ body {
     background-color: darkgreen;
     border: 0px;
 }
+
+input {
+    margin: 2px;
+}
+
+textarea {
+    height: 500px;
+    width: 50%;
+    resize: none;
+}
