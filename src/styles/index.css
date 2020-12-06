@@ -1,0 +1,7 @@
+body {
+    background-image: url('../img/christmas-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkgreen;
+    border: 0px;
+}
