@@ -24,3 +24,8 @@
     width: 100%;
     font-size: large;
 }
+
+.form-select {
+    margin: 1px;
+    width: 120px;
+}

@@ -1,4 +1,7 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+
+import PuzzleSelect from './puzzle-select';
 
 import '../styles/index.css'
 import '../styles/component-style.css'
@@ -25,11 +28,8 @@ class PuzzleInformationForm extends React.Component {
         return (
             <div className="form-column">
                 <form onSubmit={this.handleSubmit}>
-                    <label className="puzzle-select-label">
-                        Number of Puzzle:
-                            <input type="text" value={this.state.value} onChange={this.handleChange} size={40} placeholder={"type something like 1/a or 3/B"} />
-                    </label>
-                    <input type="submit" value="Submit" />
+                    <PuzzleSelect />
+                    <Button variant="contained" color="primary">Submit</Button>
                     <br />
                     <label className="puzzle-input-label">
                         Input of Puzzle:
