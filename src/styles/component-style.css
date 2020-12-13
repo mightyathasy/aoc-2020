@@ -17,5 +17,10 @@
 
 .puzzle-select-label {
     width: 100%;
-    
+    font-size: x-large;
+}
+
+.puzzle-input-label {
+    width: 100%;
+    font-size: large;
 }
