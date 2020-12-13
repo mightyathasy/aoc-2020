@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Container from '@material-ui/core/Container';
 
 import './styles/index.css';
 
 import PuzzleInformationForm from './components/puzzle-information-form';
-import ResultLabel from './components/result-label';
 
 ReactDOM.render(
-    <div className="outer-div">
-        <PuzzleInformationForm />
-        <ResultLabel />
+    <div>
+        <Container maxWidth="sm">
+            <PuzzleInformationForm />
+        </Container>
     </div>,
     document.getElementById('root')
 )

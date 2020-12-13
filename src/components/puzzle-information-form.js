@@ -1,7 +1,9 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
 import PuzzleSelect from './puzzle-select';
+import PuzzleInputTextArea from './puzzle-input-textarea';
 
 import '../styles/index.css'
 import '../styles/component-style.css'
@@ -26,18 +28,21 @@ class PuzzleInformationForm extends React.Component {
 
     render() {
         return (
-            <div className="form-column">
-                <form onSubmit={this.handleSubmit}>
-                    <PuzzleSelect />
-                    <Button variant="contained" color="primary">Submit</Button>
-                    <br />
-                    <label className="puzzle-input-label">
-                        Input of Puzzle:
-                            <br />
-                        <textarea placeholder={"Just paste the input here."} />
-                    </label>
-                </form>
-            </div>
+            <Grid container spacing={2} direction="column" justify="center">
+                <Grid container item xs={12}>
+                    <Grid item xs={4}>
+                        <PuzzleSelect />
+                    </Grid>
+                    <Grid item xs={4}>
+                        <Button variant="contained" color="primary" onClick={this.handleSubmit} >Submit</Button>
+                    </Grid>
+                </Grid>
+                <Grid container item xs={12}>
+                    <Grid item xs={12}>
+                        <PuzzleInputTextArea />
+                    </Grid>
+                </Grid>
+            </Grid>
         );
     }
 }

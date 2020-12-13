@@ -26,7 +26,7 @@ class PuzzleSelect extends React.Component {
 
     render() {
         return (
-            <FormControl className="form-select">
+            <FormControl className="form-control">
                 <InputLabel id="puzzle-select-label">Puzzle</InputLabel>
                 <Select
                     labelId="puzzle-select-label"
